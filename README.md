@@ -3,7 +3,7 @@
 
 ## 動作確認
 ### READ機能について
-pet/{id}で登録した動物の情報（「ID、動物種、名前、誕生日、体重」）を呼び出せるようにしました。
+"pet/{id}"で登録した動物の情報（「ID、動物種、名前、誕生日、体重」）を呼び出せるようにしました。
 
 例：id:1と検索した時の場合
 ![kadai10-GET](https://github.com/user-attachments/assets/e085be84-b0b1-4695-b817-f199e67eaae8)
@@ -14,7 +14,7 @@ pet/{id}で登録した動物の情報（「ID、動物種、名前、誕生日�
 ![kadai10-GET_Error](https://github.com/user-attachments/assets/f1502a90-f4fd-443f-b736-b9f4d8505bdf)
 
 ### CREATE機能について
-pet/でリクエストボディに「動物種、名前、誕生日、体重」を入力すると「{name}-chan's registration has been completed!（{name}ちゃんの登録が完了しました！)」登録されたという文言が表示されるようにしました。
+"pet/"でリクエストボディに「動物種、名前、誕生日、体重」を入力すると「{name}-chan's registration has been completed!（{name}ちゃんの登録が完了しました！)」登録されたという文言が表示されるようにしました。
 また、レスポンスのヘッダーに登録した内容のURLを表示できるようにし、ステータスも201：CREATEと表示されるようにしました。
 
 例：「動物種、名前、誕生日、体重」＝「dog、シロ、2024-01-03、2.23」とリクエストボディに記載した場合
